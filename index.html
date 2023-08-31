@@ -1,14 +1,71 @@
 <!DOCTYPE html>
+
 <html>
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Jobplus</title>
-        <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/main.css">
     </head>
+   
     <body>
-       
+       <nav class="nav">
+            <input type="checkbox" class="nav__toggle" id="Hamburger" hidden/>
+            <ul class="nav__lblock">
+                <li class="nav__hamburger">
+                    <label for="Hamburger"><img src="images/Hamburger.svg" alt=""></label>     
+                </li>
+                <li class="nav__logo"><a href="">JOBPLUS</a></li>
+            </ul>    
+            <ul class="nav__icons">
+                <li><a href=""><img src="images/Search-icon.svg" alt=""></a></li>
+                <li><a href=""><img src="images/Noti Bell.svg" alt=""></a></li>
+                <li><a href="">
+                    <img src="images/Star.svg" alt=""></a>
+                    <span class="nav__savedcount">1</span>
+                </li>
+                <li><a href=""><img src="images/User.svg" alt=""></a></li>
+                <li><a href=""><img src="images/Logout.svg" alt=""></a></li>
+            </ul>    
+            <ul class="nav__dropl">
+                <a href="">
+                    <li>Home</li>
+                </a>
+                <a href="">
+                    <li>Job Listing</li>
+                </a>
+                <a href="">
+                    <li>Job Applications</li>
+                </a>
+            </ul>
+       </nav>
+
+       <div class="hero hero--bgimg">
+            <div class="hero__wrap">    
+                <h1>Connecting candidates to the dream jobs</h1>
+                <div class="form">
+                    <div class="form__group">
+                        <label class="form__label form__label--light">What</label>
+                        <input class="form__field" type="text" placeholder="Job Title, Skill or Company">
+                    </div>
+
+                    <div class="form__group">
+                        <label class="form__label form__label--light">Where</label>
+                        <input class="form__field" type="text" placeholder="Town, City or Zipcode">
+                    </div>
+
+                    <div class="form__group">
+                        <input class="form__btn" type="sumbit" value="Search">
+                    </div>
+                </div>
+            </div>
+       </div>
+
+       <div class="container">
+            <div class="sector">
+                <h2>Choose Your Sector</h2>
+                <p>Jobs across multiple sectors. See the latest roles now.</p>
+            </div>
+        </div>
     </body>
 </html>
