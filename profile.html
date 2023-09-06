@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Jobplus</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <section>
+        <nav class="nav">
+            <input type="checkbox" class="nav__toggle" id="Hamburger" hidden />
+            <ul class="nav__lblock">
+                <li class="nav__hamburger">
+                    <label for="Hamburger"><img src="images/Hamburger.svg" alt=""></label>
+                </li>
+                <li class="nav__logo"><a href="index.html">JOBPLUS</a></li>
+            </ul>
+            <ul class="nav__icons">
+                <li><a href="listings.html"><img src="images/Search-icon.svg" alt=""></a></li>
+                <li><a href="notification.html"><img src="images/Noti Bell.svg" alt=""></a></li>
+                <li><a href="saved_jobs.html">
+                        <img src="images/Star.svg" alt=""></a>
+                    <span class="nav__savedcount">1</span>
+                </li>
+                <li><a href="profile.html"><img src="images/User.svg" alt=""></a></li>
+                <li><a href="login.html"><img src="images/Logout.svg" alt=""></a></li>
+            </ul>
+            <ul class="nav__dropl">
+                <a href="index.html">
+                    <li>Home</li>
+                </a>
+                <a href="listings.html">
+                    <li>Job Listing</li>
+                </a>
+                <a href="applications.html">
+                    <li>Job Applications</li>
+                </a>
+            </ul>
+        </nav>
+
+        <div class="hero">
+            <div class="hero__wrap">
+                <h2>Profile</h2>
+            </div>
+        </div>
+        </div>
+
+        <div class="container">
+            <div class="form form--page">
+                <div class="form__group form__group--page">
+                    <label class="form__label ">Desired Job Title</label>
+                    <input class="form__field" type="text" placeholder="Desired Job Title">
+                </div>
+
+                <div class="form__group form__group--page">
+                    <label class="form__label ">Min per annum salary</label>
+                    <input class="form__field" type="text" placeholder="Min per annum salary">
+                </div>
+
+                <div class="form__group form__group--page">
+                    <label class="form__label ">Job Type</label>
+                    <p class="form__checkbox"><input type="checkbox"> Permanent</p>
+                    <p class="form__checkbox"><input type="checkbox"> Temporany</p>
+                    <p class="form__checkbox"><input type="checkbox"> Contract</p>
+                </div>
+
+                <div class="form__group form__group--page">
+                    <label class="form__label ">Hours</label>
+                    <p class="form__checkbox"><input type="checkbox"> Full time</p>
+                    <p class="form__checkbox"><input type="checkbox"> Part time</p>
+                </div>
+
+                <div class="form__group form__group--page">
+                    <label class="form__label ">Sector</label>
+                    <select class="form__select">
+                        <option selected="selected">Choose a Sector</option>
+                        <option>Technology</option>
+                        <option>Engineering</option>
+                        <option>Education</option>
+                        <option>Health</option>
+                        <option>Law</option>
+                    </select>
+                </div>
+
+                <div class="form__group form__group--page">
+                    <label class="form__label ">Experience</label>
+                    <textarea class="form__textarea"></textarea>
+                </div>
+
+
+                <div class="form__group form__group--page">
+                    <input class="form__btn" type="sumbit" value="Submit">
+                </div>
+            </div>
+        </div>
+
+        <div class="cookie">
+            <p>Jobplus uses cookies. By continuing, you are agreeing to our use of cookies. <a href="">
+                    Learn more</a>
+            </p>
+            <img src="images/cookie-close.svg">
+        </div>
+    </section>
+
+    <footer class="footer">COPYRIGHT &copy; jobplus 2023</footer>
+</body>
+
+</html>
