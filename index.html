@@ -1,47 +1,49 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Jobplus</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/main.css">
-    </head>
-   
-    <body>
-       <nav class="nav">
-            <input type="checkbox" class="nav__toggle" id="Hamburger" hidden/>
+
+<head>
+    <meta charset="utf-8">
+    <title>Jobplus</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <section>
+        <nav class="nav">
+            <input type="checkbox" class="nav__toggle" id="Hamburger" hidden />
             <ul class="nav__lblock">
                 <li class="nav__hamburger">
-                    <label for="Hamburger"><img src="images/Hamburger.svg" alt=""></label>     
+                    <label for="Hamburger"><img src="images/Hamburger.svg" alt=""></label>
                 </li>
-                <li class="nav__logo"><a href="">JOBPLUS</a></li>
-            </ul>    
+                <li class="nav__logo"><a href="index.html">JOBPLUS</a></li>
+            </ul>
             <ul class="nav__icons">
-                <li><a href=""><img src="images/Search-icon.svg" alt=""></a></li>
-                <li><a href=""><img src="images/Noti Bell.svg" alt=""></a></li>
-                <li><a href="">
-                    <img src="images/Star.svg" alt=""></a>
+                <li><a href="listings.html"><img src="images/Search-icon.svg" alt=""></a></li>
+                <li><a href="notification.html"><img src="images/Noti Bell.svg" alt=""></a></li>
+                <li><a href="saved_jobs.html">
+                        <img src="images/Star.svg" alt=""></a>
                     <span class="nav__savedcount">1</span>
                 </li>
-                <li><a href=""><img src="images/User.svg" alt=""></a></li>
-                <li><a href=""><img src="images/Logout.svg" alt=""></a></li>
-            </ul>    
+                <li><a href="profile.html"><img src="images/User.svg" alt=""></a></li>
+                <li><a href="login.html"><img src="images/Logout.svg" alt=""></a></li>
+            </ul>
             <ul class="nav__dropl">
-                <a href="">
+                <a href="index.html">
                     <li>Home</li>
                 </a>
-                <a href="">
+                <a href="listings.html">
                     <li>Job Listing</li>
                 </a>
-                <a href="">
+                <a href="applications.html">
                     <li>Job Applications</li>
                 </a>
             </ul>
-       </nav>
+        </nav>
 
-       <div class="hero hero--bgimg">
-            <div class="hero__wrap">    
+        <div class="hero hero--bgimg">
+            <div class="hero__wrap">
                 <h1>Connecting candidates to the dream jobs</h1>
                 <div class="form">
                     <div class="form__group">
@@ -59,13 +61,77 @@
                     </div>
                 </div>
             </div>
-       </div>
+        </div>
 
-       <div class="container">
+        <div class="container">
             <div class="sector">
                 <h2>Choose Your Sector</h2>
                 <p>Jobs across multiple sectors. See the latest roles now.</p>
+
+                <div class="sector__types">
+                    <div class="sector__wrap">
+                        <picture class="sector__picture">
+                            <source srcset="images/Technology.jpg" media="(min-width: 767px)">
+                            <source srcset="images/Technology-small.jpg">
+                            <img src="images/Technology-small.jpg">
+                        </picture>
+                        <div class="sector__name">Technology</div>
+                        <ul class="sector__list">
+                            <li><a href="">Accountancy Jobs<span>5,795</span></a></li>
+                            <li><a href="">Acturial Jobs<span>5,795</span></a></li>
+                            <li><a href="">Admin Secretarial Jobs<span>5,795</span></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="sector__wrap">
+                        <picture class="sector__picture">
+                            <source srcset="images/Engineering.jpg" media="(min-width: 767px)">
+                            <source srcset="images/Engineering-small.jpg">
+                            <img src="images/Engineering-small.jpg">
+                        </picture>
+                        <div class="sector__name">Engineering</div>
+                        <ul class="sector__list">
+                            <li><a href="">Accountancy Jobs<span>5,795</span></a></li>
+                            <li><a href="">Acturial Jobs<span>5,795</span></a></li>
+                            <li><a href="">Admin Secretarial Jobs<span>5,795</span></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="sector__wrap">
+                        <picture class="sector__picture">
+                            <source srcset="images/Education.jpg" media="(min-width: 767px)">
+                            <source srcset="images/Education-small.jpg">
+                            <img src="images/Education-small.jpg">
+                        </picture>
+                        <div class="sector__name">Education</div>
+                        <ul class="sector__list">
+                            <li><a href="">Accountancy Jobs<span>5,795</span></a></li>
+                            <li><a href="">Acturial Jobs<span>5,795</span></a></li>
+                            <li><a href="">Admin Secretarial Jobs<span>5,795</span></a></li>
+                        </ul>
+                    </div>
+
+                    <a href="">
+                        <div class="sector__browse">Browse all sectors</div>
+                    </a>
+
+                    <ul class="sector__mlist">
+                        <li><a href="">Accountancy Jobs<span>5,795</span></a></li>
+                        <li><a href="">Acturial Jobs<span>5,795</span></a></li>
+                        <li><a href="">Admin Secretarial Jobs<span>5,795</span></a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </body>
+
+        <div class="cookie">
+            <p>Jobplus uses cookies. By continuing, you are agreeing to our use of cookies. <a href=""> Learn more</a>
+            </p>
+            <img src="images/cookie-close.svg">
+        </div>
+    </section>
+
+    <footer class="footer">COPYRIGHT &copy; jobplus 2023</footer>
+</body>
+
 </html>

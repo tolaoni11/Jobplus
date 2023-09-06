@@ -1,34 +1,38 @@
 .hero {
-    padding: 10rem;
-    background-color: var(--light);
-    
+  padding: 10rem;
+  background-color: var(--light);
 
-    &--bgimg {
-        background-image: url(../../images/hero-small.svg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 100%;
-        box-shadow: 0 300px rgba(0,0,0, 0.7) inset;
+  &--bgimg {
+    background-image: url(../../images/hero-small.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    box-shadow: 0 300px rgba(0, 0, 0, 0.7) inset;
+  }
+
+  h1 {
+    font-size: 26rem;
+    color: var(--light);
+    line-height: 36rem;
+    margin-bottom: 15rem;
+  }
+
+  h2 {
+    font-size: 19rem;
+    color: var(--gamma);
+  }
+
+  @include respond-to("small") {
+    &__wrap {
+      max-width: 895rem;
+      margin: 10rem auto;
     }
 
-    h1 {
-        font-size: 26rem;
-        color: var(--light);
-        line-height: 36rem;
-        margin-bottom: 15rem;
+    &__bgimg {
+      background-image: url(../../images/hero-big.svg);
+      font-size: 38rem;
+      max-width: 500rem;
+      line-height: 40rem;
     }
-
-    @include respond-to('small') {
-        &__wrap {
-            max-width: 895rem;
-            margin: 10rem auto;
-        }
-
-        &__bgimg {
-            background-image: url(../../images/hero-big.svg);
-            font-size: 38rem;
-            max-width: 500rem;
-            line-height: 40rem;
-        }
-    }
+  }
 }
